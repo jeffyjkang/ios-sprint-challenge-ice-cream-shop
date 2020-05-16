@@ -36,7 +36,7 @@ class IceCreamShop {
     }
     func orderCone(flavor: Flavor, topping: String?, size: Size) -> Cone? {
         let cone = Cone(flavor: flavor, topping: topping ?? "No toppings", size: size)
-        totalSales = totalSales + cone.size.rawValue == Size.large.rawValue ? Size.large.rawValue : cone.size.rawValue == Size.medium.rawValue ? Size.medium.rawValue : Size.small.rawValue
+        totalSales = totalSales + cone.size.rawValue
         return cone
     }
 }
